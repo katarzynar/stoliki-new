@@ -1,0 +1,43 @@
+{
+  "users": [
+      {
+          "id": 1,
+          "email": "demo@demo",
+          "password": "demo"
+      }
+  ],
+  "restaurants": [
+      {
+          "id": 1,
+          "name": "Green Cafe Nero",
+          "kind": "kawiarnia",
+          "address": "Nowogrodzka",
+          "img": "assets/img/restaurant.jpg"
+      },
+      {
+          "id": 2,
+          "name": "Mexicana",
+          "kind": "meksykańska",
+          "address": "Złota 23",
+          "img": "assets/img/restaurant1.jpg"
+      },
+      {
+          "id": 3,
+          "name": "Browar de Brazil",
+          "kind": "pub",
+          "address": "Marszałkowska 12",
+          "img": "assets/img/restauracja_3.jpg"
+      }
+  ],
+  "reservations": [
+      {
+          "id": 1,
+          "userId": 1,
+          "restaurantId": 1,
+          "datetime": 1510595721852,
+          "seats": 2
+      }
+  ],
+  "menu_items": [],
+  "comments": []
+}
