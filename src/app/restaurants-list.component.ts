@@ -8,7 +8,7 @@ import { HttpClient } from "@angular/common/http";
       restaurants-list works!
     </p>
 
-    <ul> <li *ngFor="let restaurant of list">
+    <ul> <li [routerLink]="['./restaurant']" *ngFor="let restaurant of list">
         <div>
           <img src = "{{restaurant.img}}">
         </div>
