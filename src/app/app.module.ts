@@ -7,6 +7,8 @@ import { HttpClientModule } from "@angular/common/http";
 import { AppComponent } from './app.component';
 import { RestaurantsListComponent } from './restaurants-list.component';
 import { RestaurantComponent } from './restaurant.component';
+import { HomeComponent } from './home.component';
+import { FiltersComponent } from './filters.component';
 
 
 @NgModule({
@@ -14,6 +16,8 @@ import { RestaurantComponent } from './restaurant.component';
     AppComponent,
     RestaurantsListComponent,
     RestaurantComponent,
+    HomeComponent,
+    FiltersComponent,
 
   ],
   imports: [

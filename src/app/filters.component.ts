@@ -1,18 +1,16 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
 @Component({
-  selector: 'app-restaurant',
+  selector: 'filters',
   template: `
     <p>
-      restaurant works!
-
-      {{restaurant.name}}
+      filters works!
     </p>
   `,
   styles: [],
   encapsulation: ViewEncapsulation.None
 })
-export class RestaurantComponent implements OnInit {
+export class FiltersComponent implements OnInit {
 
   constructor() { }
 
