@@ -10,6 +10,17 @@ import { RestaurantComponent } from './restaurant.component';
 import { HomeComponent } from './home.component';
 import { FiltersComponent } from './filters.component';
 
+import { SearchComponent } from './search.component';
+import { NavigationComponent } from './navigation.component';
+import { ProfileComponent } from './profile.component';
+import { FavouriteComponent } from './favourite.component';
+import { ReservationsComponent } from './reservations.component';
+import { HistoryComponent } from './history.component';
+
+
+
+
+
 
 @NgModule({
   declarations: [
@@ -18,6 +29,12 @@ import { FiltersComponent } from './filters.component';
     RestaurantComponent,
     HomeComponent,
     FiltersComponent,
+    SearchComponent,
+    NavigationComponent,
+    ProfileComponent,
+    FavouriteComponent,
+    ReservationsComponent,
+    HistoryComponent,
 
   ],
   imports: [

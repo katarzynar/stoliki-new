@@ -1,22 +1,46 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { NgModel } from '@angular/forms';
+import { HttpClient } from "@angular/common/http";
 
 @Component({
   selector: 'app-home',
   template: `
-  <input class="input input--search" type="text">
+  <input class="input input--search" type="text" placeholder="szukaj">
 
-  <button class="btn">SZCZEGÓŁOWE</button>
+  <button class="btn" [routerLink]="['/filtry']">SZCZEGÓŁOWE</button>
 
-  <app-restaurants-list></app-restaurants-list>
+  <div class="res-box" *ngFor="let restaurant of restaurants"
+  [ngStyle]="{'background-image': 'url(' + restaurant.img + ')'}">
+    {{restaurant.name}}
+  </div>
+
   `,
-  styles: [],
+  styles: [`
+  .res-box{
+    height: 200px;
+  }
+  `],
   encapsulation: ViewEncapsulation.None
 })
 export class HomeComponent implements OnInit {
+  list: Object;
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
+
+  restaurants
+  restaurant
+
+  fetchRestaurants(){
+    this.http.get('http://localhost:3000/restaurants')
+      .subscribe( restaurants => {
+        this.restaurants = restaurants
+      })
+  }
 
   ngOnInit() {
+
+    this.fetchRestaurants()
+
   }
 
 }

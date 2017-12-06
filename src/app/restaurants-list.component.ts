@@ -5,15 +5,16 @@ import { HttpClient } from "@angular/common/http";
   selector: 'app-restaurants-list',
   template: `
 
-   <div *ngFor="let restaurant of restaurants"
+   <div class="res-box" *ngFor="let restaurant of restaurants"
    [ngStyle]="{'background-image': 'url(' + restaurant.img + ')'}">
      {{restaurant.name}}
    </div>
 
   `,
   styles: [
-    `img{
-      width:200px;
+    `.res-box{
+      height: 200px;
+    }
     }
 
     `
@@ -26,6 +27,7 @@ export class RestaurantsListComponent implements OnInit {
   constructor(private http: HttpClient) { }
 
   restaurants
+  restaurant
 
   fetchRestaurants(){
     this.http.get('http://localhost:3000/restaurants')
