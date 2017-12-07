@@ -34,7 +34,7 @@ import { HistoryComponent } from './history.component';
     ProfileComponent,
     FavouriteComponent,
     ReservationsComponent,
-    HistoryComponent,
+    HistoryComponent
 
   ],
   imports: [
