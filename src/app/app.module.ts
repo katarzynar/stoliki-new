@@ -1,3 +1,4 @@
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -17,11 +18,6 @@ import { FavouriteComponent } from './favourite.component';
 import { ReservationsComponent } from './reservations.component';
 import { HistoryComponent } from './history.component';
 
-
-
-
-
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,9 +31,9 @@ import { HistoryComponent } from './history.component';
     FavouriteComponent,
     ReservationsComponent,
     HistoryComponent
-
   ],
   imports: [
+    BrowserAnimationsModule,
     BrowserModule,
     HttpClientModule,
     Routing
