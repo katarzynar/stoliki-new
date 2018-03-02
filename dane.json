@@ -1,42 +1,325 @@
 {
   "users": [
-      {
-          "id": 1,
-          "email": "demo@demo",
-          "password": "demo"
-      }
+    {
+      "id": 1,
+      "email": "demo@demo",
+      "password": "demo"
+    }
   ],
   "restaurants": [
-      {
-          "id": 1,
-          "name": "Green Cafe Nero",
-          "kind": "kawiarnia",
-          "address": "Nowogrodzka",
-          "img": "assets/img/restaurant.jpg"
-      },
-      {
-          "id": 2,
-          "name": "Mexicana",
-          "kind": "meksykańska",
-          "address": "Złota 23",
-          "img": "assets/img/restaurant1.jpg"
-      },
-      {
-          "id": 3,
-          "name": "Browar de Brazil",
-          "kind": "pub",
-          "address": "Marszałkowska 12",
-          "img": "assets/img/restauracja_3.jpg"
-      }
+    {
+      "id": 1,
+      "name": "Polska restauracja",
+      "kind": "kuchnia polska",
+      "address": "Wołoska",
+      "img": "assets/img/restaurant.jpg",
+      "favourite": true
+    },
+    {
+      "id": 2,
+      "name": "Green Cafe Nero",
+      "kind": "kawiarnia",
+      "address": "Nowogrodzka",
+      "img": "assets/img/restauracja_3.jpg",
+      "favourite": false
+    },
+    {
+      "id": 3,
+      "name": "Mexicana",
+      "kind": "meksykańska",
+      "address": "Złota 23",
+      "img": "assets/img/restaurant1.jpg",
+      "favourite": true
+    },
+    {
+      "id": 4,
+      "name": "Browar de Brazil",
+      "kind": "pub",
+      "address": "Marszałkowska 12",
+      "img": "assets/img/restauracja_3.jpg",
+      "favourite": false
+    }
   ],
   "reservations": [
-      {
-          "id": 1,
-          "userId": 1,
-          "restaurantId": 1,
-          "datetime": 1510595721852,
-          "seats": 2
-      }
+    {
+      "id": 1,
+      "userId": 1,
+      "restaurantId": 1,
+      "datetime": 1510595721852,
+      "seats": 2
+    }
+  ],
+  "favourites": [
+    {
+      "id": 1,
+      "restaurantId": 1
+    },
+    {
+      "userId": 1,
+      "restaurantId": 1,
+      "id": 2
+    },
+    {
+      "userId": 1,
+      "restaurantId": 1,
+      "id": 3
+    },
+    {
+      "userId": 1,
+      "restaurantId": 1,
+      "id": 4
+    },
+    {
+      "userId": 1,
+      "restaurantId": 1,
+      "id": 5
+    },
+    {
+      "userId": 1,
+      "restaurantId": 1,
+      "id": 6
+    },
+    {
+      "userId": 1,
+      "restaurantId": 3,
+      "id": 7
+    },
+    {
+      "userId": 1,
+      "restaurantId": 3,
+      "id": 8
+    },
+    {
+      "userId": 1,
+      "restaurantId": 3,
+      "id": 9
+    },
+    {
+      "userId": 1,
+      "restaurantId": 1,
+      "id": 10
+    },
+    {
+      "userId": 1,
+      "restaurantId": 1,
+      "id": 11
+    },
+    {
+      "userId": 1,
+      "restaurantId": 1,
+      "id": 12
+    },
+    {
+      "userId": 1,
+      "restaurantId": 1,
+      "id": 13
+    },
+    {
+      "userId": 1,
+      "restaurantId": 1,
+      "id": 14
+    },
+    {
+      "userId": 1,
+      "restaurantId": 1,
+      "id": 15
+    },
+    {
+      "userId": 1,
+      "restaurantId": 1,
+      "id": 16
+    },
+    {
+      "restautantName": "Polska restauracja",
+      "id": 17
+    },
+    {
+      "restautantName": "Polska restauracja",
+      "id": 18
+    },
+    {
+      "restautantName": "Polska restauracja",
+      "userId": 1,
+      "id": 19
+    },
+    {
+      "restautantName": "Green Cafe Nero",
+      "userId": 1,
+      "id": 20
+    },
+    {
+      "restautantName": "Green Cafe Nero",
+      "userId": 1,
+      "id": 21
+    },
+    {
+      "restautantName": "Polska restauracja",
+      "restaurantId": 1,
+      "userId": 1,
+      "id": 22
+    },
+    {
+      "restautantName": "Green Cafe Nero",
+      "restaurantId": 2,
+      "userId": 1,
+      "id": 23
+    },
+    {
+      "restautantName": "Mexicana",
+      "restaurantId": 3,
+      "userId": 1,
+      "id": 24
+    },
+    {
+      "restautantName": "Browar de Brazil",
+      "restaurantId": 4,
+      "userId": 1,
+      "id": 25
+    },
+    {
+      "restautantName": "Polska restauracja",
+      "restaurantId": 1,
+      "userId": 1,
+      "id": 26
+    },
+    {
+      "restautantName": "Green Cafe Nero",
+      "restaurantId": 2,
+      "userId": 1,
+      "id": 27
+    },
+    {
+      "restautantName": "Mexicana",
+      "restaurantId": 3,
+      "userId": 1,
+      "id": 28
+    },
+    {
+      "restautantName": "Mexicana",
+      "restaurantId": 3,
+      "userId": 1,
+      "id": 29
+    },
+    {
+      "restautantName": "Browar de Brazil",
+      "restaurantId": 4,
+      "userId": 1,
+      "id": 30
+    },
+    {
+      "restautantName": "Polska restauracja",
+      "restaurantId": 1,
+      "userId": 1,
+      "id": 31
+    },
+    {
+      "restautantName": "Green Cafe Nero",
+      "restaurantId": 2,
+      "userId": 1,
+      "id": 32
+    },
+    {
+      "restautantName": "Green Cafe Nero",
+      "restaurantId": 2,
+      "userId": 1,
+      "id": 33
+    },
+    {
+      "restautantName": "Green Cafe Nero",
+      "restaurantId": 2,
+      "userId": 1,
+      "id": 34
+    },
+    {
+      "restautantName": "Polska restauracja",
+      "restaurantId": 1,
+      "userId": 1,
+      "id": 35
+    },
+    {
+      "restautantName": "Green Cafe Nero",
+      "restaurantId": 2,
+      "userId": 1,
+      "id": 36
+    },
+    {
+      "restautantName": "Green Cafe Nero",
+      "restaurantId": 2,
+      "userId": 1,
+      "id": 37
+    },
+    {
+      "restautantName": "Green Cafe Nero",
+      "restaurantId": 2,
+      "userId": 1,
+      "id": 38
+    },
+    {
+      "restautantName": "Polska restauracja",
+      "restaurantId": 1,
+      "userId": 1,
+      "id": 39
+    },
+    {
+      "restautantName": "Polska restauracja",
+      "restaurantId": 1,
+      "userId": 1,
+      "id": 40
+    },
+    {
+      "restautantName": "Polska restauracja",
+      "restaurantId": 1,
+      "userId": 1,
+      "id": 41
+    },
+    {
+      "restautantName": "Polska restauracja",
+      "restaurantId": 1,
+      "userId": 1,
+      "id": 42
+    },
+    {
+      "restautantName": "Polska restauracja",
+      "restaurantId": 1,
+      "userId": 1,
+      "id": 43
+    },
+    {
+      "restautantName": "Polska restauracja",
+      "restaurantId": 1,
+      "userId": 1,
+      "id": 44
+    },
+    {
+      "restautantName": "Green Cafe Nero",
+      "restaurantId": 2,
+      "userId": 1,
+      "id": 45
+    },
+    {
+      "restautantName": "Green Cafe Nero",
+      "restaurantId": 2,
+      "userId": 1,
+      "id": 46
+    },
+    {
+      "restautantName": "Green Cafe Nero",
+      "restaurantId": 2,
+      "userId": 1,
+      "id": 47
+    },
+    {
+      "restautantName": "Green Cafe Nero",
+      "restaurantId": 2,
+      "userId": 1,
+      "id": 48
+    },
+    {
+      "restautantName": "Polska restauracja",
+      "restaurantId": 1,
+      "userId": 1,
+      "id": 49
+    }
   ],
   "menu_items": [],
   "comments": []

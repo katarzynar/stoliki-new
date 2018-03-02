@@ -20,7 +20,7 @@ import { Component, ElementRef, HostBinding, HostListener, OnInit, ViewChild, Vi
 
   <header class="mainHeader">
   <div class="mainHeader__logo" [routerLink]="['']">
-         <div> <img src="img/logo-header.jpg" class="mainHeader__logo__img"></div>
+         <div> <img src="assets/img/logo-header.jpg" class="mainHeader__logo__img"></div>
       <h1 class="mainHeader__logo__title logo__title">Stoliki</h1>
   </div>
 

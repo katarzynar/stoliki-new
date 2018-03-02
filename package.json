@@ -24,6 +24,7 @@
     "@angular/router": "^5.0.0",
     "core-js": "^2.4.1",
     "json-server": "^0.12.1",
+    "ng2-search-filter": "^0.4.7",
     "rxjs": "^5.5.2",
     "zone.js": "^0.8.14"
   },
@@ -48,5 +49,16 @@
     "ts-node": "~3.2.0",
     "tslint": "~5.7.0",
     "typescript": "~2.4.2"
-  }
+  },
+  "description": "This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.0.",
+  "main": "karma.conf.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/katarzynar/stoliki.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/katarzynar/stoliki/issues"
+  },
+  "homepage": "https://github.com/katarzynar/stoliki#readme"
 }

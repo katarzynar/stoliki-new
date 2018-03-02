@@ -22,12 +22,22 @@ import { HttpClient } from "@angular/common/http";
   encapsulation: ViewEncapsulation.None
 })
 export class RestaurantsListComponent implements OnInit {
-  list: Object;
+  search(arg0: any): any {
+    throw new Error("Method not implemented.");
+  }
+
 
   constructor(private http: HttpClient) { }
 
+  serch(query){
+   this.search(query);
+  }
+
   restaurants
   restaurant
+
+
+
 
   fetchRestaurants(){
     this.http.get('http://localhost:3000/restaurants')
@@ -38,8 +48,7 @@ export class RestaurantsListComponent implements OnInit {
 
   ngOnInit() {
 
-    this.fetchRestaurants()
-
-  }
-
+    this.fetchRestaurants() 
+    }
+ 
 }

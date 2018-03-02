@@ -25,6 +25,11 @@
     box-shadow: $value;
 }
 
+@mixin text-shadow($value) {
+    -webkit-text-shadow: $value;
+    -moz-text-shadow: $value;
+    text-shadow: $value;
+}
 @mixin border-radius($value){
     -webkit-border-radius: $value;
     -moz-border-radius: $value;
@@ -129,6 +134,7 @@ body{
         color: $mainColor;
         font-size: 5em;
         line-height:1.6em;
+        @include text-shadow(2px 3px 4px #999);
     }
     &__img{
         width:100%;
@@ -141,6 +147,7 @@ body{
     height: 5.4em;
     &__logo{
         display: flex;
+      
         &__title{
             font-size:3em;
             line-height: 2em;
@@ -186,6 +193,7 @@ body{
         height: 0.5em;
         background-color: $gray;
         @include border-radius(2.5em);
+        @include box-shadow(2px 2px 2px $fontGray);
         &:nth-child(2){
             margin-top:0.5em;
             margin-bottom:0.5em;
@@ -212,6 +220,11 @@ body{
         width: 38vw;
     }
     &--oneThird{
+  
+        height: 3em;
+        font-size: 1em;
+
+        
          
     }
     &--mini{
@@ -258,6 +271,10 @@ body{
     }
 }
 
+.flex-container{
+display: flex;
+}
+
 
 .title{
     font-family: Lato-bold;
@@ -266,6 +283,10 @@ body{
     color: $gray;
     position: relative;
     display: block;
+&--orange{
+    color: $mainColor;
+
+}
 }
 
 .bigTitle{
@@ -279,6 +300,18 @@ body{
         color:$mainColor; 
     }
 }
+
+.text-left{
+    text-align:left;
+}
+
+.text-right{
+    text-align:right;
+}
+ 
+.text-center{
+    text-align:center;
+}   
     
 .underscore{
    &::before{
@@ -416,6 +449,7 @@ input[type=range]::-webkit-slider-thumb {
         height:9em;
         margin-top:1em;
         margin-bottom:1em;
+        background-size: cover;
 
         &__content{
             width:50%;
@@ -436,6 +470,39 @@ input[type=range]::-webkit-slider-thumb {
                 line-height: 1.4;
                 display:inline-block;
             }
+        }
+    }
+
+}
+
+
+.resView{
+    display:flex;
+    margin-top:20px;
+    border-bottom: 1px solig $gray;
+    &__image{
+        width:35vw;
+        height: 30vw;
+        background-size: cover;
+        border-radius: 4px;
+    }
+    
+    &__content{
+        width:50vw;
+        margin-left:20px;
+        &__resTitle{
+            color: $mainColor;
+            font-size: 1.4em;
+            padding-bottom:0.1em;
+        }
+        &--info{
+            display: block;
+            width:100%;
+            color:$gray;
+            &--lightgray{
+                color:$lightGray;
+            }
+           
         }
     }
 
